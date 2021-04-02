@@ -17,13 +17,13 @@ This project skeleton was created to help people get started with creating their
 
 ### Testing
 
-```
+```console
 npm run test
 ```
 
 ### Building
 
-```
+```console
 npm run build
 ```
 
@@ -31,22 +31,26 @@ npm run build
 
 To run a live-reload Storybook server on your local machine:
 
-```
+```console
 npm run storybook
 ```
 
 To export your Storybook as static files:
 
-```
+```console
 npm run storybook:build
 ```
 
 Generating New Components
 I've included a handy NodeJS util file under util called create-component.js. Instead of copy pasting components to create a new component, you can instead run this command to generate all the files you need to start building out a new component. To use it:
 
+```console
 npm run generate YourComponentName
+```
+
 This will generate:
 
+```console
 /src
   /YourComponentName
     YourComponentName.tsx
@@ -54,7 +58,8 @@ This will generate:
     YourComponentName.test.tsx
     YourComponentName.types.ts
     YourComponentName.scss
-    
+```
+
 > The default templates for each file can be modified under util/templates.
 
 > You can type the component name in lowercase mode the command will Capitilized your component on generation time.
